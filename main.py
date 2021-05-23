@@ -28,7 +28,7 @@ def update_grafs():
         #plt.plot(x, y, label='h='+str(h))
         graph_axes.plot(x, y, label='h='+str(h))
         logger.log(text='Вычисление завершено для h:', value=str(h), force=True)
-    pylab.legend()
+    graph_axes.legend()
     pylab.draw()
     pylab.show()
 
